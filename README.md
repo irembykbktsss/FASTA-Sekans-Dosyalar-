@@ -1,0 +1,1 @@
+# FASTA-Sekans-Dosyalar-
