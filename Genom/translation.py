@@ -12,16 +12,6 @@ dna=file.read()
 print ("DNA Sequence: ", dna)
 a = dna.replace('\n',"")                   #boşlukları kaldır
 
-#a = print((re.findall("\n" , dna)))
-#print(dna)
-#yanyana = print (re.findall("\S+" , dna))
-#siraSayisi = print (len(re.findall("\S+" , dna)))        
-#boslukSayısı = print (len(re.findall("\s", dna)))
-#virgulSayisi = print(len(re.findall("\W+" , dna)))
-#print(virgulsuz[0:100])
-#print (len(dna))
-#print (dna[0:75])
-
 # DNA codon table
 codon_table = {"TTT" : "F", "CTT" : "L", "ATT" : "I", "GTT" : "V",
            "TTC" : "F", "CTC" : "L", "ATC" : "I", "GTC" : "V",
