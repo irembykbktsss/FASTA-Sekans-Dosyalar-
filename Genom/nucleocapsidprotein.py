@@ -89,5 +89,9 @@ def format_alignment(align1, align2, score, begin, end, full_sequences=False):
 sars = s1[28080:29348]
 nCov = s2[28273:29532]
 matrix = matlist.blosum62
+
+file3=open("nucleocapsidprotein.fasta","w")
 for a in pairwise2.align.globaldx(sars, nCov, matrix):
-    print (format_alignment(*a))
+    file3.writelines(str((format_alignment(*a)))) 
+
+file3.close()
