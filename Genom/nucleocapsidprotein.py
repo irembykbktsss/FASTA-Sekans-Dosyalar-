@@ -90,8 +90,9 @@ sars = s1[28080:29348]
 nCov = s2[28273:29532]
 matrix = matlist.blosum62
 
-file3=open("nucleocapsidprotein.fasta","w")
 for a in pairwise2.align.globaldx(sars, nCov, matrix):
-    file3.writelines(str((format_alignment(*a)))) 
+    (format_alignment(*a))
 
-file3.close()
+file4=open("nucleocapsidprotein.fasta","w")
+file4.write(str((format_alignment(*a)))) 
+file4.close()
